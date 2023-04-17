@@ -1,0 +1,42 @@
+﻿<Window x:Class="Øvelse6._8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Øvelse6._8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="26,28,10,10">
+            <RadioButton Name="North" Content="North"  IsChecked="True"/>
+            <RadioButton Name ="South" Content="South" />
+            <RadioButton Name ="East" Content="East"/>
+            <RadioButton Name ="West" Content="West"/>
+
+            <StatusBar Name="statusBar"  >
+                <StatusBarItem Height="88">
+                    <TextBlock Name="radio" />
+                </StatusBarItem>
+            </StatusBar>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="26,28,10,10">
+            <CheckBox Name="Hva" Content="Hva'"/>
+            <CheckBox Name="Saa" Content="Saa"/>
+            <CheckBox Name="Der" Content="Der"/>
+            <CheckBox Name="Taber" Content="Taber"/>
+
+            <StatusBar Name="statusBar2"  >
+                <StatusBarItem Height="88">
+                    
+                    <TextBlock Name="check" />
+                </StatusBarItem>
+            </StatusBar>
+
+        </StackPanel>
+    </Grid>
+
+</Window>

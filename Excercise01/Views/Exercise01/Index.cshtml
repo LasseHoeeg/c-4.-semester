@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "CountryView";
+}
+  <h1>CountryView</h1>
+
+
+
+@using (Html.BeginForm("Index", "Exercise01", FormMethod.Get))
+{
+
+
+@Html.DropDownList("Countries") 
+
+
+        <input type="submit"
+value="Show country code">
+
+    @if (ViewBag.CountryCode != null)
+    {
+                    <strong>Country code:</strong> @ViewBag.CountryCode
+    }
+}
+
+@using(Html.BeginForm("Index", "Exercise01")) {
+    
+<label>Country</label>
+
+@Html.TextBox("Country") 
+<br/>
+
+<label>Code</label>
+
+@Html.TextBox("Code")
+<br/>
+
+<input type="submit" value="Add" />
+}
+

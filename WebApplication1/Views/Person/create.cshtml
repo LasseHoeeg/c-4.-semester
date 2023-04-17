@@ -1,0 +1,16 @@
+﻿@model WebApplication1.Models.Person
+@{
+    ViewData["Title"] = "create";
+}
+
+<h1>create</h1>
+
+@using (Html.BeginForm("PersonCreatedCollection", "Person"))
+{
+    //Tror bare det skal være input felter her. 
+    
+    @Html.EditorFor(model => model.Fornavn)
+    @Html.EditorFor(model => model.Efternavn)
+    @Html.EditorFor(model => model.Alder)
+        <input type="submit" value="Gem" />
+}

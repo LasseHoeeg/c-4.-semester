@@ -1,0 +1,18 @@
+﻿@model WebApplication1.Models.Person
+
+@{
+    ViewData["Title"] = "find";
+}
+
+<h1>find</h1>
+
+@*@using (Html.BeginForm())
+{*@
+
+    @*//@Html.EditorForModel();*@
+    @Html.EditorFor(model => model.Fornavn)
+    @Html.EditorFor(model => model.Efternavn)
+    @Html.EditorFor(model => model.Alder)
+@*        <input type="submit" value="Gem" />
+}*@
+

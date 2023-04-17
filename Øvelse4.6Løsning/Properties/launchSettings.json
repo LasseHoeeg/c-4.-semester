@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Øvelse4.6Løsning": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:50814;http://localhost:50815"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Øvelse4.2": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:50776;http://localhost:50784"
+    }
+  }
+}

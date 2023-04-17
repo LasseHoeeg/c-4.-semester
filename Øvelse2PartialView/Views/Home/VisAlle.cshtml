@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "VisAlle";
+}
+
+<h1>VisAlle</h1>
+
+@model List<Person>
+<div>
+    <ul>
+        @foreach(Person p in Model)
+        {
+            <li> @Html.Partial("VisEnPerson", p) </li>
+        }
+
+    </ul>
+
+
+</div>
